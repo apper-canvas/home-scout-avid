@@ -34,9 +34,9 @@ const Header = ({
 <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-r from-primary to-primary-600 rounded-lg flex items-center justify-center">
               <ApperIcon name="Home" className="w-5 h-5 text-white" />
-            </div>
+</div>
             <span className="font-display font-bold text-xl text-gray-900">
-              HomeScout 01
+              HomeScout 02
             </span>
           </Link>
 
