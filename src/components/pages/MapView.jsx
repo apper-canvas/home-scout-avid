@@ -26,10 +26,10 @@ const MapView = () => {
     } catch (err) {
       setError("Failed to load properties. Please try again.");
       console.error("Error loading properties:", err);
-    } finally {
+} finally {
       setLoading(false);
+    }
   };
-
   const handleToggleFavorite = (propertyId) => {
     const newSavedProperties = savedProperties.includes(propertyId)
       ? savedProperties.filter(id => id !== propertyId)
@@ -67,8 +67,9 @@ const MapView = () => {
           <div className="h-8 bg-gray-200 rounded w-48 mb-6 shimmer"></div>
           <div className="h-96 bg-gray-200 rounded-xl mb-6 shimmer"></div>
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-            {Array.from({ length: 8 }).map((_, i) => (
+{Array.from({ length: 8 }).map((_, i) => (
               <div key={i} className="h-32 bg-gray-200 rounded-lg shimmer">
+              </div>
             ))}
           </div>
         </div>
